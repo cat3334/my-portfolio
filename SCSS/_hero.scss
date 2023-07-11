@@ -1,0 +1,131 @@
+.hero {
+  height: calc(100vh - 4.5rem) !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &__text-container {
+    font-size: 2rem;
+    margin-left: 15rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-bottom: 5rem;
+    white-space: nowrap;
+    padding: 2rem 3rem;
+    font-weight: bold;
+  }
+
+  &__shape {
+    width: 50%;
+    clip-path: polygon(100% 0, 10% 0, 100% 100%);
+    background-color: var(--purple);
+  }
+
+  &__p-1 {
+    animation: typing 2.5s steps(80, end);
+    overflow: hidden;
+    font-size: 5rem;
+
+    & span {
+      animation: spin 3.5s linear infinite;
+      transform: rotate(45deg);
+      display: inline-block;
+    }
+  }
+
+  &__p-2 {
+    font-size: 3.5rem;
+    animation: 5s slide-right both;
+    animation-delay: 350ms;
+    margin-bottom: 0.5rem;
+  }
+
+  &__p-3 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  &__bottom {
+    animation: 5s slide-up both;
+    animation-delay: 500ms;
+  }
+
+  &__blue {
+    color: $blue--2;
+  }
+}
+
+.cta {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__btn {
+    animation: scale 6.5s;
+    background-color: 1px #000 solid;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  &__icons {
+    padding: 4px 12px 4px 12px;
+    margin-right: 15rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__icon {
+    font-size: 3.5rem;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.05;
+    }
+
+    &--cv {
+      border: 1px black solid;
+      font-size: 2.1rem;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      padding: 3px 4px;
+    }
+  }
+}
+
+.fa-clock {
+  font-size: 12rem;
+}
+
+@media only screen and (max-width: 48rem) {
+  .hero {
+    flex-direction: column;
+    position: relative;
+
+    &__shape {
+      height: 50%;
+      width: 100%;
+      order: 1;
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+    &__text-container {
+      height: 50vh !important;
+      align-self: center;
+      margin: 25rem 0 0 0;
+      padding: 0;
+    }
+  }
+}

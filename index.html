@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Łukasz Sodolski - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a1fb068210.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" tabindex="-1">
+      <a class="header__logo" href="#">
+        Ł.S. -<br />
+        portfolio
+      </a>
+      <nav class="header__nav">
+        <ul class="main-nav__links">
+          <li><a class="main-nav__link" href="#skills">Skills</a></li>
+          <li><a class="main-nav__link" href="#portfolio">Projects</a></li>
+          <li><a class="main-nav__link" href="#about">About me</a></li>
+          <li><a class="main-nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__links hidden">
+          <li><a class="mobile-nav__link" href="#skills">Skills</a></li>
+          <li><a class="mobile-nav__link" href="#portfolio">Projects</a></li>
+          <li><a class="mobile-nav__link" href="#about">About me</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <div class="hamburger__bar1"></div>
+        <div class="hamburger__bar2"></div>
+        <div class="hamburger__bar3"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__text-container">
+          <div class="hero__text">
+            <p class="hero__p-1">Nice to meet You, <span>👋</span></p>
+            <p class="hero__p-2">
+              my name's <span class="hero__blue">Łukasz Sodolski</span>
+            </p>
+            <div class="hero__bottom">
+              <p class="hero__p-3">
+                I specialize in
+                <span class="hero__blue">Frontend</span> Development
+              </p>
+              <div class="cta">
+                <a class="button cta__btn" href="#portfolio">My projects</a>
+                <div class="cta__icons">
+                  <a href="https://github.com/cat3334" target="_blank">
+                    <i class="fa-brands fa-github cta__icon"></i
+                  ></a>
+                  <a
+                    class="cta__icon cta__icon--cv"
+                    href="https://www.dropbox.com/s/pea3kedqtopuex2/%C5%81ukasz%20Sodolski%20-%20CV.pdf?dl=1"
+                    >CV</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__shape"></div>
+      </section>
+      <section class="skills max-size-wrapper" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__flex-container">
+          <div class="skills__img-row reveal left">
+            <figure>
+              <img class="skills__img" src="/img/html-logo.png" alt="" />
+              <figcaption class="skills__figcaption">Html</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/css-logo.png" alt="" />
+              <figcaption class="skills__figcaption">CSS</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                class="skills__img"
+                src="/img/6242e5dd4337267623f1e7a5_js.svg"
+                alt=""
+              />
+              <figcaption class="skills__figcaption">Javascript</figcaption>
+            </figure>
+          </div>
+          <div class="skills__img-row reveal right">
+            <figure>
+              <img class="skills__img" src="/img/typescript.png" alt="" />
+              <figcaption class="skills__figcaption">TypeScript</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/React-icon.svg.png" alt="" />
+              <figcaption class="skills__figcaption">React</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/redux-logo.png" alt="" />
+              <figcaption class="skills__figcaption">Redux</figcaption>
+            </figure>
+          </div>
+          <div class="skills__img-row reveal left">
+            <figure>
+              <img class="skills__img" src="/img/mysql.png" alt="" />
+              <figcaption class="skills__figcaption">My SQL</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/express.png" alt="" />
+              <figcaption class="skills__figcaption">Express.js</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/mui.png" alt="" />
+              <figcaption class="skills__figcaption">Material UI</figcaption>
+            </figure>
+          </div>
+          <div class="skills__img-row reveal right">
+            <figure>
+              <img class="skills__img" src="/img/sass-logo.png" alt="" />
+              <figcaption class="skills__figcaption">Sass</figcaption>
+            </figure>
+            <figure>
+              <img
+                class="skills__img"
+                src="img/Tailwind_CSS_Logo.svg.png"
+                alt=""
+              />
+              <figcaption class="skills__figcaption">Tailwind</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/25231.png" alt="" />
+              <figcaption class="skills__figcaption">Git</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects max-size-wrapper" id="portfolio">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects__row">
+          <div class="projects__img-container">
+            <a href="https://anime-nyaan.netlify.app/" target="_blank">
+              <img class="projects__img" src="./img/nyaan.webp" alt="" />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/cat3334/nyaa-anime" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://anime-nyaan.netlify.app/" target="_blank">
+                See <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Project written with the use of React and React Router, serving as
+              a tool that is not only allowing registered users to create and
+              update their own list of watched anime titles, but to also find
+              new ones that may be to their liking. It makes use of Jikan.moe
+              REST API.
+            </p>
+          </div>
+        </div>
+        <div class="projects__row projects__row--2">
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Prototype of a bookshop store made with the use of React,
+              Typescript and SCSS. The user cart state is being saved in the
+              Firebase Database, while Redux is being resposible for global
+              state managment. It was implemented using Google Books API.
+            </p>
+          </div>
+          <div class="projects__img-container">
+            <a href="https://yeet-shop.netlify.app" target="_blank">
+              <img
+                class="projects__img"
+                src="./img/yeet.png"
+                alt="screenshot of project"
+              />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/cat3334/Yeet-Shop" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://yeet-shop.netlify.app" target="_blank"
+                >See <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__row">
+          <div class="projects__img-container">
+            <a href="https://sequent.onrender.com/" target="_blank">
+              <img
+                class="projects__img"
+                src="./img/sequent.PNG"
+                alt="screenshot of project"
+              />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/cat3334/sequent" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://sequent.onrender.com/" target="_blank"
+                >See <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              A personal development app made for keeping track of one's habits
+              throughout the year. Frontend was made with the use of React,
+              while the backend side of things is being handled by Node.js,
+              Express and MySQL.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects__row projects__row--2">
+          <div class="projects__text-container">
+            <p class="projects__text">
+              A news aggregator website made with the intent of learning the
+              basics of Vue framework
+            </p>
+          </div>
+          <div class="projects__img-container">
+            <a href="https://news-watcher.netlify.app/" target="_blank">
+              <img
+                class="projects__img"
+                src="./img/news-watcher.PNG"
+                alt="screenshot of portfolio page"
+              />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/cat3334/news-watcher" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://news-watcher.netlify.app/" target="_blank"
+                >See <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__row">
+          <div class="projects__img-container">
+            <a href="https://yoga-house.netlify.app/" target="_blank">
+              <img
+                class="projects__img"
+                src="./img/yoga.PNG"
+                alt="screenshot of project"
+              />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/cat3334/yoga-house" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://yoga-house.netlify.app/" target="_blank"
+                >See <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Landing page for a Yoga venue, made using React and MaterialUI.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about max-size-wrapper" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about__wrapper">
+          <div class="about__img-container">
+            <img
+              class="about__img"
+              alt="picture of myself"
+              src="./img/CV_Okrag_Male_001-modified.png"
+            />
+          </div>
+          <div class="about__text-content">
+            <p>
+              I got into programming because of my thrist for knowledge and
+              constant improvement. I try to get the best out of my stack, while
+              also looking for the ways to grow beyond it! In my free time I
+              like to practice mindfulness, play piano and listen to music.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact max-size-wrapper" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container">
+          <div class="contact__top-text">
+            <p>Let's get in touch!</p>
+            <p>
+              I am also avaliable at the following address:
+              <a href="mailto:l.sodolski0@gmail.com" class="form__email"
+                >l.sodolski0@gmail.com</a
+              >
+            </p>
+          </div>
+          <form
+            name="contact"
+            id="contact__form"
+            data-netlify="true"
+            class="form"
+          >
+            <div class="form__inputs-container">
+              <div class="form__input-container">
+                <label for="name">Your Name:</label>
+                <input
+                  type="text"
+                  placeholder="Jan Kowalski"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  required
+                />
+              </div>
+              <div class="form__input-container">
+                <label for="email">Email Address:</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="jan.kowalski@xyz.com"
+                  id="email"
+                  class="form__input"
+                  required
+                />
+              </div>
+            </div>
+            <label for="message">Field For Your Message:</label>
+            <textarea
+              id="message"
+              class="form__message"
+              name="message"
+              type="text"
+              required
+            ></textarea>
+            <button id="form__submit-btn" class="button button--wide form__btn">
+              Send!
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Made in <span class="footer__year">2023</span> by Łukasz Sodolski</p>
+    </footer>
+
+    <!-- Form Submission Modal -->
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <h1 class="modal__heading">Thanks for contact!</h1>
+        <p class="modal__text-main">
+          I will get back to You as soon as possible
+        </p>
+        <span class="modal__close-btn button">Close</span>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

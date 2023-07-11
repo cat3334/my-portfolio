@@ -1,0 +1,58 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -50%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 50%;
+    height: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
+}

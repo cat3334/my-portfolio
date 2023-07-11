@@ -1,0 +1,32 @@
+.skills {
+  @include card;
+  &__flex-container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    gap: 2rem;
+    display: grid;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &__img-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__img {
+    height: 11rem;
+    width: 11rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__figcaption {
+    padding: 1.3rem;
+  }
+}

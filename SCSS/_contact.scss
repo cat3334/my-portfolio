@@ -1,0 +1,80 @@
+.contact {
+  position: relative;
+  padding-bottom: 2rem;
+  @include card;
+  margin-top: 3rem;
+
+  &__container {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  &__top-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: $purple--1;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    margin: -3rem 0 3rem 0;
+  }
+}
+
+.form {
+  display: flex;
+
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+
+  &__email {
+    text-decoration: underline;
+  }
+
+  &__inputs-container {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  &__input-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  &__input {
+    font-size: 2rem;
+    border: 1px $purple--1 solid;
+    padding: 1rem 2rem;
+
+    &::placeholder {
+      text-align: center;
+      color: rgb(63, 63, 63);
+    }
+  }
+
+  &__btn {
+    font-weight: bold;
+    background-color: $purple--1;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  &__message {
+    height: 30rem;
+    max-width: 80%;
+    border: 2px $purple--1 solid;
+    width: 50rem;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .form__inputs-container {
+    flex-direction: column;
+  }
+}

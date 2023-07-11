@@ -1,0 +1,60 @@
+.about {
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  @include card;
+
+  &__wrapper {
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  &__img {
+    max-height: 30rem;
+    border: 2px #333 solid;
+    border-radius: 50%;
+    object-fit: contain;
+    position: relative;
+  }
+
+  &__img-container {
+    position: relative;
+    margin-left: 3rem;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: #8192a9;
+      border: 1px #333 solid;
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      // z-index: -1;
+      opacity: 0.5;
+      right: 4rem;
+      bottom: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .about {
+    &__wrapper {
+      flex-direction: column;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    &__img-container,
+    &__img {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &__text-content {
+      width: 90%;
+    }
+  }
+}
