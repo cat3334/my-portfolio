@@ -245,7 +245,7 @@ li::before {
   .hero__shape {
     width: 50%;
     clip-path: polygon(100% 0, 10% 0, 100% 100%);
-    background-color: var(--purple); }
+    background-color: #4d208d; }
   .hero__p-1 {
     animation: typing 2.5s steps(80, end);
     overflow: hidden;
