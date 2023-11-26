@@ -1,24 +1,27 @@
 .header {
   width: 100%;
   font-size: 2.1rem;
-  height: 6rem;
+  height: 5.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $blue--1;
   color: #eee;
   position: relative;
+  border-bottom: 5px black solid;
+  background-color: #222;
 
   &__logo {
     text-align: center;
+    border-bottom: none;
     text-transform: uppercase;
     background-color: $purple--1;
     height: 100%;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     min-width: 15vw;
     font-weight: bold;
     cursor: pointer;
-    border-top: 5px $purple--1 solid;
+    color: #eee;
+   
   }
 }
 
@@ -35,6 +38,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  letter-spacing: 0.9px;
 }
 
 .main-nav__links li:first-of-type {
@@ -64,8 +68,8 @@ li::before {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 4px;
-  background-color: #111;
+  height: 2px;
+  background-color: rgb(74, 196, 74);
   transition: transform 0.35s ease-out;
   left: 0;
 }
@@ -82,8 +86,8 @@ li::before {
 
 .main-nav__links > li:hover {
   font-size: 2.32rem;
-  border-left: 4px #000 solid;
-  border-right: 4px #000 solid;
+  border-left: 2px rgb(74, 196, 74) solid;
+  border-right: 2px rgb(74, 196, 74) solid; 
 }
 
 .main-nav__links > li:not(:first-child):hover {
@@ -118,7 +122,7 @@ li::before {
     z-index: 999999999;
     top: 6.5rem;
     right: 0;
-    background-color: $purple--1;
+    background-color: #222;
     position: absolute;
     height: 20rem;
     padding: 0;

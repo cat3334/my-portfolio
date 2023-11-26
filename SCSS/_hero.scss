@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  color: #111;
 
   &__text-container {
     font-size: 2rem;
@@ -32,6 +33,8 @@
     animation: typing 2.5s steps(80, end);
     overflow: hidden;
     font-size: 5rem;
+    font-weight: bold;
+    color:black;
 
     & span {
       animation: spin 3.5s linear infinite;
@@ -58,7 +61,7 @@
   }
 
   &__blue {
-    color: $blue--2;
+    color: $primary--1
   }
 }
 
@@ -67,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+ 
   &__btn {
     animation: scale 6.5s;
     background-color: 1px #000 solid;
@@ -79,16 +82,15 @@
 
   &__icons {
     padding: 4px 12px 4px 12px;
-    margin-right: 15rem;
     display: flex;
-    align-items: center;
+   
     gap: 2rem;
   }
 
   &__icon {
     font-size: 3.5rem;
     cursor: pointer;
-
+    
     &:hover {
       scale: 1.05;
     }

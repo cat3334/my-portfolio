@@ -1,10 +1,9 @@
+
 .skills {
-  @include card;
   &__flex-container {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    text-transform: uppercase;
     margin-bottom: 8rem;
     gap: 2rem;
     display: grid;
@@ -12,21 +11,38 @@
     overflow: hidden;
   }
 
+ 
+
   &__img-row {
     display: flex;
     justify-content: space-around;
   }
 
-  &__img {
-    height: 11rem;
-    width: 11rem;
 
+
+  &__img {
+    height: 10rem;
+    width: 10rem;
+    object-fit:contain;
+    border-radius: 10px;
+    margin-bottom: 3px;
+ 
     &:hover {
       transform: scale(1.1);
     }
   }
 
   &__figcaption {
-    padding: 1.3rem;
+    border-radius: 5px;
+    background-color: $primary--1;
+    color:#eee;
+    border: 1px #222 solid;
+    padding: 0.3rem 0.5rem;
+    width: 10.5rem;
   }
+}
+.skills__figure{
+  padding: 1rem 0;
+  border-radius: 10px;
+  color: $primary--1;
 }

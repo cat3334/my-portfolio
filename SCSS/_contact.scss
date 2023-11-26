@@ -46,7 +46,7 @@
 
   &__input {
     font-size: 2rem;
-    border: 1px $purple--1 solid;
+    border: 1px #222 solid;
     padding: 1rem 2rem;
 
     &::placeholder {
@@ -57,7 +57,7 @@
 
   &__btn {
     font-weight: bold;
-    background-color: $purple--1;
+    background-color: #000;
 
     &:hover {
       scale: 1.05;
@@ -66,10 +66,11 @@
 
   &__message {
     height: 30rem;
+    border: 1px #000 solid;
     max-width: 80%;
-    border: 2px $purple--1 solid;
     width: 50rem;
     font-size: 2rem;
+    resize: none;
   }
 }
 

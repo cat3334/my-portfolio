@@ -1,7 +1,7 @@
 .projects {
   &__row {
     display: flex;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   &__text-container {
@@ -10,7 +10,7 @@
     padding-left: 3rem;
 
     &:nth-child(2) {
-      border-left: 6px $purple--1 solid;
+      border-left: 6px $primary--2 solid;
     }
   }
 
@@ -24,30 +24,44 @@
     padding-top: 5rem;
 
     &:nth-child(2) {
-      border-left: 6px $purple--1 solid;
+      border-left: 6px $primary--2 solid;
     }
   }
 
   &__img-text {
     display: flex;
-    text-decoration: underline;
-    text-underline-offset: 2px;
     justify-content: space-around;
+    border-radius: 2px;
     width: 80%;
-    margin-top: 1rem;
+    padding: 2px;
+   
   }
 
   &__img {
     max-width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 30px 3px 8px;
+
+    &-text{
+      background-color: #222;
+      border: 2px #222 solid;
+      color: #eee;
+      letter-spacing: 0.6px;
+      word-spacing: 2px;
+      width: 90%;
+    }
+
+   
   }
 
   &__text {
     margin: 0 3rem;
+  
   }
 
   &__live {
-    color: red;
+   
+    color: rgb(223, 105, 105);
     margin-left: 0.1rem;
   }
 }
