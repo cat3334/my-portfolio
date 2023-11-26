@@ -7,13 +7,15 @@
   align-items: center;
   color: #eee;
   position: relative;
-  border-bottom: 5px black solid;
   background-color: #222;
 
   &__logo {
     text-align: center;
     border-bottom: none;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $purple--1;
     height: 100%;
     font-size: 1.8rem;
@@ -150,7 +152,7 @@ li::before {
   &__bar3 {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: $primary--2;
     font-weight: bold;
     margin: 6px 0;
     transition: 0.4s;
@@ -171,7 +173,7 @@ li::before {
 
 @media only screen and (max-width: 30rem) {
   .header {
-    height: 6.5rem;
+    height: 7rem;
 
     &__nav {
       display: none;
